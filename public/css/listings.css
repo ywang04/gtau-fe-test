@@ -1,0 +1,97 @@
+.listings__container {
+    padding: 0 var(--spacing-x4);
+  }
+  
+  .listings__container .listings__header {
+    margin: var(--spacing-x4) 0;
+  }
+  
+  .listings__container .listings__header .listings_results {
+    color: var(--color-primary);
+  }
+  
+  .listings__container .listings__header h2 {
+    font-size: var(--font-size-x-large);
+    margin-bottom: var(--spacing-x1);
+  }
+  
+  .listings__container .listings__grid {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: var(--grid-gap);
+    border-top: 1px solid var(--color-borders);
+  }
+  
+  .listings__container .listings__grid .listing {
+    margin-top: var(--spacing-x2);
+  }
+  
+  .listings__container .listings__grid .listing__header__container {
+    margin: 20px 10px;
+  }
+  
+  .listings__container .listings__grid .listing__header__container h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: var(--spacing);
+  }
+  
+  .listings__container .listings__grid .listing__img__container {
+    height: 200px;
+  }
+  
+  .listings__container .listings__grid .listing__img__container .listing__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .listing__price__location {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .listing__price__location strong {
+    color: var(--color-primary);
+  }
+  
+  .listing__price__location span {
+    color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+  
+  .listing__paragraph {
+    color: var(--color-text);
+    font-size: var(--font-size-default);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  .listing__button {
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-primary-light);
+    font-size: var(--font-size-default);
+    padding: var(--spacing) var(--spacing-x2);
+    margin-right: var(--spacing);
+    cursor: pointer;
+  }
+  
+  @media (min-width: 800px) {
+    /* tablet */
+    .listings__grid {
+      grid-template-columns: 50% 50%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* desktop */
+    .listings__grid {
+      grid-template-columns: 30% 30% 30%;
+    }
+  }
+  
